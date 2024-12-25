@@ -12,10 +12,7 @@ function RootNavigation() {
   return (
     <Stack.Navigator
       screenOptions={({navigation}) => ({
-        headerTintColor: ThemeColors.WHITE,
-        headerStyle: {
-          backgroundColor: ThemeColors.BLACK,
-        },
+        headerTintColor: ThemeColors.White,
       })}>
       <Stack.Screen
         options={{headerShown: false}}

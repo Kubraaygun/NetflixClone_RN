@@ -1,16 +1,13 @@
 //import liraries
 import React, {Component} from 'react';
-import {View, SafeAreaView, StyleSheet} from 'react-native';
-import {Text} from 'react-native-svg';
+import {View, Text, StyleSheet} from 'react-native';
 
 // create a component
-const WatchList = () => {
+const Header = () => {
   return (
-    <SafeAreaView style={{flex: 1}}>
-      <View style={styles.container}>
-        <Text>WatchList</Text>
-      </View>
-    </SafeAreaView>
+    <View style={styles.container}>
+      <Text>MyComponent</Text>
+    </View>
   );
 };
 
@@ -25,4 +22,4 @@ const styles = StyleSheet.create({
 });
 
 //make this component available to the app
-export default WatchList;
+export default Header;

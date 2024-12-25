@@ -6,8 +6,8 @@ import {Text} from 'react-native-svg';
 // create a component
 const WatchList = () => {
   return (
-    <SafeAreaView style={{flex: 1}}>
-      <View style={styles.container}>
+    <SafeAreaView>
+      <View style={{flex: 1}}>
         <Text>WatchList</Text>
       </View>
     </SafeAreaView>

@@ -4,7 +4,6 @@ import WatchList from '../screens/watchList';
 import SignIn from '../screens/signIn';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Header from '../components/router/header';
-import {ThemeColors} from '../theme/themeColors';
 
 const Stack = createNativeStackNavigator();
 
@@ -12,10 +11,7 @@ function RootNavigation() {
   return (
     <Stack.Navigator
       screenOptions={({navigation}) => ({
-        headerTintColor: ThemeColors.WHITE,
-        headerStyle: {
-          backgroundColor: ThemeColors.BLACK,
-        },
+        header: () => <Header />,
       })}>
       <Stack.Screen
         options={{headerShown: false}}

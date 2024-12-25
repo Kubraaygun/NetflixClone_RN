@@ -1,17 +1,10 @@
 //import liraries
 import React, {Component} from 'react';
 import {View, SafeAreaView, StyleSheet} from 'react-native';
-import {Text} from 'react-native-svg';
 
 // create a component
 const WatchList = () => {
-  return (
-    <SafeAreaView style={{flex: 1}}>
-      <View style={styles.container}>
-        <Text>WatchList</Text>
-      </View>
-    </SafeAreaView>
-  );
+  return <SafeAreaView></SafeAreaView>;
 };
 
 // define your styles
