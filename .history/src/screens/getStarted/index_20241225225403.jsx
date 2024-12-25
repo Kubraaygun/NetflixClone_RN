@@ -2,7 +2,6 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import {ThemeColors} from '../../theme/themeColors';
-import Button from '../../components/ui/button';
 
 // create a component
 const GetStarted = () => {
@@ -20,9 +19,7 @@ const GetStarted = () => {
             height: '15%',
             position: 'absolute',
             bottom: 0,
-            backgroundColor: 'rgba(0,0,0,0.6)',
-            padding: 5,
-            justifyContent: 'space-between',
+            backgroundColor: 'rgba(0,0,0,0.5)',
           }}>
           <Text
             style={{
@@ -33,25 +30,9 @@ const GetStarted = () => {
             }}>
             Unlimited entertainment, one low price.
           </Text>
-          <Text
-            style={{
-              fontSize: 18,
-              color: ThemeColors.WHITE,
-              textAlign: 'center',
-              fontWeight: '500',
-            }}>
-            All of Netflix, starting at just $149.
-          </Text>
         </View>
       </View>
-      <View
-        style={{
-          flex: 1,
-          backgroundColor: ThemeColors.BLACK,
-          justifyContent: 'center',
-        }}>
-        <Button title="GET STARTED" />
-      </View>
+      <View style={{flex: 1}}></View>
     </View>
   );
 };

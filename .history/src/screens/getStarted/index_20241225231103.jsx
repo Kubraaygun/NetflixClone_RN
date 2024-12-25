@@ -2,7 +2,6 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import {ThemeColors} from '../../theme/themeColors';
-import Button from '../../components/ui/button';
 
 // create a component
 const GetStarted = () => {
@@ -44,14 +43,7 @@ const GetStarted = () => {
           </Text>
         </View>
       </View>
-      <View
-        style={{
-          flex: 1,
-          backgroundColor: ThemeColors.BLACK,
-          justifyContent: 'center',
-        }}>
-        <Button title="GET STARTED" />
-      </View>
+      <View style={{flex: 1}}></View>
     </View>
   );
 };

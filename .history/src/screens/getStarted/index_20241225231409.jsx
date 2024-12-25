@@ -44,13 +44,8 @@ const GetStarted = () => {
           </Text>
         </View>
       </View>
-      <View
-        style={{
-          flex: 1,
-          backgroundColor: ThemeColors.BLACK,
-          justifyContent: 'center',
-        }}>
-        <Button title="GET STARTED" />
+      <View style={{flex: 1, backgroundColor: ThemeColors.BLACK}}>
+        <Button />
       </View>
     </View>
   );
