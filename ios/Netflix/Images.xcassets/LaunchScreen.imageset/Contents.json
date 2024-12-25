@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "BrandAssets_Logos_01-Wordmark.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "BrandAssets_Logos_01-Wordmark@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "BrandAssets_Logos_01-Wordmark@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
