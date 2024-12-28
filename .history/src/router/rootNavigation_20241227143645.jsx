@@ -21,18 +21,13 @@ function RootNavigation() {
       <Stack.Screen
         options={{
           headerShown: false,
+          headerRight: () => <Edit2 size="32" color={ThemeColors.WHITE} />,
         }}
         name={GETSTARTED}
         component={GetStarted}
       />
       <Stack.Screen name={SIGNIN} component={SignIn} />
-      <Stack.Screen
-        options={{
-          headerRight: () => <Edit2 size="25" color={ThemeColors.WHITE} />,
-        }}
-        name={WATCHLIST}
-        component={WatchList}
-      />
+      <Stack.Screen name={WATCHLIST} component={WatchList} />
     </Stack.Navigator>
   );
 }

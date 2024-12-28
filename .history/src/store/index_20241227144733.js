@@ -4,6 +4,6 @@ import whatchListSlice from './slice/whatchListSlice';
 
 export const store = configureStore({
   reducer: {
-    watchList: whatchListSlice,
+    watchList: whatchListSlice, // 'user' state'i 'userSlice' ile yönetilecek
   },
 });

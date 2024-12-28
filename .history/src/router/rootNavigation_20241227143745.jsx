@@ -28,7 +28,7 @@ function RootNavigation() {
       <Stack.Screen name={SIGNIN} component={SignIn} />
       <Stack.Screen
         options={{
-          headerRight: () => <Edit2 size="25" color={ThemeColors.WHITE} />,
+          headerRight: () => <Edit2 size="3252" color={ThemeColors.WHITE} />,
         }}
         name={WATCHLIST}
         component={WatchList}
