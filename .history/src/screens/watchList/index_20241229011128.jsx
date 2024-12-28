@@ -11,13 +11,15 @@ const WatchList = () => {
   const {whatchList} = useSelector(state => state.watchList);
   return (
     <View style={defaultScreenStyle.container}>
-      <FlatList
-        numColumns={2}
-        data={whatchList}
-        renderItem={({item, index}) => (
-          <WhatchListItem item={item} index={index} />
-        )}
-      />
+      <View>
+        <FlatList
+          numColumns={2}
+          data={whatchList}
+          renderItem={({item, index}) => (
+            <WhatchListItem item={item} index={index} />
+          )}
+        />
+      </View>
     </View>
   );
 };

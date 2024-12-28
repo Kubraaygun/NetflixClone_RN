@@ -5,16 +5,11 @@ import {View, Text, StyleSheet, Pressable} from 'react-native';
 import {ThemeColors} from '../../theme/themeColors';
 import {getRandomColor} from '../../utils/function';
 import {width} from '../../utils/constants';
-import {useNavigation} from '@react-navigation/native';
-import {ADDNEWLIST} from '../../utils/routes';
 
 // create a component
 const WhatchListItem = ({item, index}) => {
-  const navigation = useNavigation();
   return (
-    <Pressable
-      onPress={() => navigation.navigate(ADDNEWLIST)}
-      style={styles.container}>
+    <Pressable style={styles.container}>
       <View
         style={{
           width: width / 2 - 50,

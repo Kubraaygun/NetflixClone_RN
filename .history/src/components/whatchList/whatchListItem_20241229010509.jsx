@@ -1,33 +1,28 @@
 //import liraries
-import {EmojiHappy} from 'iconsax-react-native';
+import {Smileys} from 'iconsax-react-native';
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, Pressable} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import {ThemeColors} from '../../theme/themeColors';
 import {getRandomColor} from '../../utils/function';
 import {width} from '../../utils/constants';
-import {useNavigation} from '@react-navigation/native';
-import {ADDNEWLIST} from '../../utils/routes';
 
 // create a component
 const WhatchListItem = ({item, index}) => {
-  const navigation = useNavigation();
   return (
-    <Pressable
-      onPress={() => navigation.navigate(ADDNEWLIST)}
-      style={styles.container}>
+    <View style={styles.container}>
       <View
         style={{
-          width: width / 2 - 50,
-          height: width / 2 - 50,
+          width: width / 2 - 30,
+          height: 150,
           backgroundColor: getRandomColor(index),
           justifyContent: 'center',
           alignItems: 'center',
           borderRadius: 8,
         }}>
-        <EmojiHappy size="90" color={ThemeColors.WHITE} />
+        <Smileys size="70" color={ThemeColors.WHITE} />
       </View>
       <Text style={styles.title}>{item.title}</Text>
-    </Pressable>
+    </View>
   );
 };
 
