@@ -16,7 +16,6 @@ const WhatchListItem = ({item, index}) => {
           backgroundColor: getRandomColor(index),
           justifyContent: 'center',
           alignItems: 'center',
-          borderRadius: 8,
         }}>
         <Smileys size="70" color={ThemeColors.WHITE} />
       </View>

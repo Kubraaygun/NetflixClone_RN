@@ -6,19 +6,18 @@ import {ThemeColors} from '../../theme/themeColors';
 import {getRandomColor} from '../../utils/function';
 
 // create a component
-const WhatchListItem = ({item, index}) => {
+const WhatchListItem = ({item}) => {
   return (
     <View style={styles.container}>
       <View
         style={{
           width: 150,
           height: 150,
-          backgroundColor: getRandomColor(index),
+          backgroundColor: getRandomColor,
           justifyContent: 'center',
           alignItems: 'center',
-          borderRadius: 8,
         }}>
-        <Smileys size="70" color={ThemeColors.WHITE} />
+        <Smileys size="50" color={ThemeColors.WHITE} />
       </View>
       <Text style={styles.title}>{item.title}</Text>
     </View>

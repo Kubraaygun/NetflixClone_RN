@@ -15,9 +15,7 @@ const WatchList = () => {
         contentContainerStyle={{alignItems: 'center '}}
         numColumns={2}
         data={whatchList}
-        renderItem={({item, index}) => (
-          <WhatchListItem item={item} index={index} />
-        )}
+        renderItem={({item, index}) => <WhatchListItem item={item} />}
       />
     </View>
   );

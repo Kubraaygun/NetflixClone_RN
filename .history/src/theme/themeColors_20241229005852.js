@@ -3,7 +3,7 @@ const ThemeColors = {
   BLACK: '#000000',
   RED: '#C60A0A',
   COLOR0: '#C84C05',
-  COLOR1: '#BED754',
+  COLOR1: '#79D7BE',
   COLOR2: '#500073',
   COLOR3: '#FF748B',
   COLOR4: '#9AA6B2',
