@@ -12,7 +12,7 @@ const WatchList = () => {
   return (
     <View style={defaultScreenStyle.container}>
       <FlatList
-        contentContainerStyle={{alignItems: 'center '}}
+        contentContainerStyle={{alignItems: 'center'}}
         numColumns={2}
         data={whatchList}
         renderItem={({item}) => <WhatchListItem item={item} />}

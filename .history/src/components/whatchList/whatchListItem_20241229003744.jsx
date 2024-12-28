@@ -2,23 +2,12 @@
 import {Smileys} from 'iconsax-react-native';
 import React, {Component} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import {ThemeColors} from '../../theme/themeColors';
 
 // create a component
 const WhatchListItem = ({item}) => {
   return (
     <View style={styles.container}>
-      <View
-        style={{
-          width: 150,
-          height: 150,
-          backgroundColor: 'red',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}>
-        <Smileys size="50" color={ThemeColors.WHITE} />
-      </View>
-      <Text style={styles.title}>{item.title}</Text>
+      <Smileys />
     </View>
   );
 };
@@ -29,13 +18,8 @@ const styles = StyleSheet.create({
     width: '45%',
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#2c3e50',
     margin: 10,
-  },
-  title: {
-    color: ThemeColors.WHITE,
-    fontSize: 18,
-    fontWeight: '500',
-    marginTop: 10,
   },
 });
 

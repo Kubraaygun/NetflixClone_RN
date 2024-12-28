@@ -8,15 +8,8 @@ import {ThemeColors} from '../../theme/themeColors';
 const WhatchListItem = ({item}) => {
   return (
     <View style={styles.container}>
-      <View
-        style={{
-          width: 150,
-          height: 150,
-          backgroundColor: 'red',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}>
-        <Smileys size="50" color={ThemeColors.WHITE} />
+      <View style={{width: 100, height: 100, backgroundColor: 'red'}}>
+        <Smileys size="32" color="#FF8A65" />
       </View>
       <Text style={styles.title}>{item.title}</Text>
     </View>
@@ -33,9 +26,6 @@ const styles = StyleSheet.create({
   },
   title: {
     color: ThemeColors.WHITE,
-    fontSize: 18,
-    fontWeight: '500',
-    marginTop: 10,
   },
 });
 

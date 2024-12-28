@@ -9,14 +9,6 @@ const initialState = {
       id: 2,
       title: 'Funnny',
     },
-    {
-      id: 3,
-      title: 'All',
-    },
-    {
-      id: 4,
-      title: 'Funnny',
-    },
   ],
 };
 
