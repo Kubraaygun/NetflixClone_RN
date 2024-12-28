@@ -1,15 +1,10 @@
 import {createSlice} from '@reduxjs/toolkit';
 const initialState = {
-  whatchList: [
-    {
-      id: 1,
-      title: 'All',
-    },
-  ],
+  whatchList: [],
 };
 
 const whatchListSlice = createSlice({
-  name: 'whatchList', //slice adi
+  name: 'whatchList',
   initialState,
   reducers: {
     addNewList: (state, action) => {
@@ -18,5 +13,5 @@ const whatchListSlice = createSlice({
   },
 });
 
-export const {addNewList} = whatchListSlice.actions;
+export const {addNewList} = whachListSlice.actions;
 export default whatchListSlice.reducer;

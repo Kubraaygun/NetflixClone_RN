@@ -8,11 +8,11 @@ import WhatchListItem from '../../components/whatchList/whatchListItem';
 
 // create a component
 const WatchList = () => {
-  const {whatchList} = useSelector(state => state.watchList);
+  const {whatchList} = useSelector(state => state.WatchList);
   return (
     <View style={defaultScreenStyle.container}>
       <FlatList
-        data={whatchList}
+        data={WatchList}
         renderItem={({item}) => <WhatchListItem item={item} />}
       />
     </View>

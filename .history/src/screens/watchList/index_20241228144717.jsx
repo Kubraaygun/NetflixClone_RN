@@ -4,17 +4,17 @@ import {View, SafeAreaView, StyleSheet, FlatList} from 'react-native';
 import {Text} from 'react-native-svg';
 import {defaultScreenStyle} from '../../styles/defaultScreenStyle';
 import {useSelector} from 'react-redux';
-import WhatchListItem from '../../components/whatchList/whatchListItem';
 
 // create a component
 const WatchList = () => {
-  const {whatchList} = useSelector(state => state.watchList);
+  const {WatchList} = useSelector(state => state.WatchList);
   return (
     <View style={defaultScreenStyle.container}>
-      <FlatList
-        data={whatchList}
-        renderItem={({item}) => <WhatchListItem item={item} />}
-      />
+     <FlatList
+     data={WatchList}
+     renderItem={({item}) => item.whatchListItem
+    }
+     >
     </View>
   );
 };
