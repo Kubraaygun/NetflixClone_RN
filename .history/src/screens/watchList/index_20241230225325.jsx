@@ -1,12 +1,11 @@
 //import liraries
 import React, {Component} from 'react';
-import {View, SafeAreaView, Text, FlatList} from 'react-native';
-
+import {View, SafeAreaView, StyleSheet, FlatList} from 'react-native';
+import {Text} from 'react-native-svg';
 import {defaultScreenStyle} from '../../styles/defaultScreenStyle';
 import {useSelector} from 'react-redux';
 import WhatchListItem from '../../components/whatchList/whatchListItem';
 import {ThemeColors} from '../../theme/themeColors';
-import {height} from '../../utils/constants';
 
 // create a component
 const WatchList = () => {
@@ -18,11 +17,11 @@ const WatchList = () => {
           <Text
             style={{
               color: ThemeColors.WHITE,
-              fontSize: 24,
+              fontSize: 30,
               textAlign: 'center',
-              marginVertical: height * 0.05,
+              marginVertical: 10,
             }}>
-            Who's Watching?
+            Ready to watch
           </Text>
         }
         numColumns={2}

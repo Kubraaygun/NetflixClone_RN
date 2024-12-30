@@ -1,10 +1,12 @@
 //import liraries
-import React from 'react';
-import {View, Text, StyleSheet, Pressable, Image} from 'react-native';
+import {EmojiHappy} from 'iconsax-react-native';
+import React, {Component} from 'react';
+import {View, Text, StyleSheet, Pressable} from 'react-native';
 import {ThemeColors} from '../../theme/themeColors';
 import {getRandomColor} from '../../utils/function';
 import {width} from '../../utils/constants';
 import {useNavigation} from '@react-navigation/native';
+import {ADDNEWLIST} from '../../utils/routes';
 
 // create a component
 const WhatchListItem = ({item, index}) => {
@@ -19,14 +21,7 @@ const WhatchListItem = ({item, index}) => {
           justifyContent: 'center',
           alignItems: 'center',
         }}>
-        <Image
-          source={require('../../assets/images/smiley.png')}
-          style={{
-            width: width * 0.3,
-            height: width * 0.3,
-            resizeMode: 'contain',
-          }}
-        />
+        <EmojiHappy size="90" color={ThemeColors.WHITE} />
       </View>
       <Text style={styles.title}>{item.title}</Text>
     </Pressable>

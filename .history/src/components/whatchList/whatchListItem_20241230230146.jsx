@@ -22,8 +22,8 @@ const WhatchListItem = ({item, index}) => {
         <Image
           source={require('../../assets/images/smiley.png')}
           style={{
-            width: width * 0.3,
-            height: width * 0.3,
+            width: width * 0.35,
+            height: width * 0.35,
             resizeMode: 'contain',
           }}
         />

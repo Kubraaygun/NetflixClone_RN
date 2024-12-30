@@ -3,8 +3,9 @@ import React from 'react';
 import {View, Text, StyleSheet, Pressable, Image} from 'react-native';
 import {ThemeColors} from '../../theme/themeColors';
 import {getRandomColor} from '../../utils/function';
-import {width} from '../../utils/constants';
+import {height, width} from '../../utils/constants';
 import {useNavigation} from '@react-navigation/native';
+import {} from 'react-native-svg';
 
 // create a component
 const WhatchListItem = ({item, index}) => {
@@ -22,8 +23,8 @@ const WhatchListItem = ({item, index}) => {
         <Image
           source={require('../../assets/images/smiley.png')}
           style={{
-            width: width * 0.3,
-            height: width * 0.3,
+            width: width * 0.35,
+            height: width * 0.35,
             resizeMode: 'contain',
           }}
         />

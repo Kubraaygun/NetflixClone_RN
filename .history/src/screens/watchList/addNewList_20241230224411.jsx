@@ -25,7 +25,7 @@ const AddNewList = () => {
         onSubmit={values => dispatch(addNewList(values))}>
         {({handleChange, handleBlur, handleSubmit, values, errors}) => (
           <ScrollView>
-            <View style={{marginVertical: 'auto'}}>
+            <View>
               <Text
                 style={{
                   color: ThemeColors.WHITE,
@@ -38,7 +38,7 @@ const AddNewList = () => {
               <Text
                 style={{
                   color: ThemeColors.WHITE,
-                  fontSize: 15,
+                  fontSize: 18,
                   textAlign: 'center',
                   marginVertical: 10,
                 }}>

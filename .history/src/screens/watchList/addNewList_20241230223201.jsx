@@ -1,6 +1,6 @@
 //import liraries
 import React from 'react';
-import {View, ScrollView, Text} from 'react-native';
+import {View, ScrollView} from 'react-native';
 import {useDispatch} from 'react-redux';
 import Input from '../../components/ui/input';
 import Button from '../../components/ui/button';
@@ -8,8 +8,6 @@ import {defaultScreenStyle} from '../../styles/defaultScreenStyle';
 import {Formik} from 'formik';
 import {NewListSchema} from '../../utils/validationSchema';
 import {addNewList} from '../../store/slice/whatchListSlice';
-import {height} from '../../utils/constants';
-import {ThemeColors} from '../../theme/themeColors';
 
 // create a component
 const AddNewList = () => {
@@ -22,29 +20,9 @@ const AddNewList = () => {
           title: '',
         }}
         validationSchema={NewListSchema}
-        onSubmit={values => dispatch(addNewList(values))}>
+        onSubmit={values => dispatch(addNewList(values.action))}>
         {({handleChange, handleBlur, handleSubmit, values, errors}) => (
           <ScrollView>
-            <View style={{marginVertical: 'auto'}}>
-              <Text
-                style={{
-                  color: ThemeColors.WHITE,
-                  fontSize: 30,
-                  textAlign: 'center',
-                  marginVertical: 10,
-                }}>
-                Ready to watch?
-              </Text>
-              <Text
-                style={{
-                  color: ThemeColors.WHITE,
-                  fontSize: 15,
-                  textAlign: 'center',
-                  marginVertical: 10,
-                }}>
-                Enter your list to create or watch
-              </Text>
-            </View>
             <Input
               error={errors.title}
               onChangeText={handleChange('title')}
@@ -53,9 +31,7 @@ const AddNewList = () => {
               title="Whatch List Name"
               placeholder=""
             />
-            <View style={{marginTop: height * 0.09}}>
-              <Button onPress={handleSubmit} title="CREATE" status="primary" />
-            </View>
+            <Button onPress={handleSubmit} title="Save" status="success" />
           </ScrollView>
         )}
       </Formik>

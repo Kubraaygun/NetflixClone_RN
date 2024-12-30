@@ -25,7 +25,7 @@ const AddNewList = () => {
         onSubmit={values => dispatch(addNewList(values))}>
         {({handleChange, handleBlur, handleSubmit, values, errors}) => (
           <ScrollView>
-            <View style={{marginVertical: 'auto'}}>
+            <View>
               <Text
                 style={{
                   color: ThemeColors.WHITE,
@@ -35,15 +35,7 @@ const AddNewList = () => {
                 }}>
                 Ready to watch?
               </Text>
-              <Text
-                style={{
-                  color: ThemeColors.WHITE,
-                  fontSize: 15,
-                  textAlign: 'center',
-                  marginVertical: 10,
-                }}>
-                Enter your list to create or watch
-              </Text>
+              <Text style={{}}>Enter your list to create or watch</Text>
             </View>
             <Input
               error={errors.title}

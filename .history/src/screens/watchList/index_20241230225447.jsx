@@ -18,9 +18,9 @@ const WatchList = () => {
           <Text
             style={{
               color: ThemeColors.WHITE,
-              fontSize: 24,
+              fontSize: 30,
               textAlign: 'center',
-              marginVertical: height * 0.05,
+              marginVertical: height * 0.1,
             }}>
             Who's Watching?
           </Text>

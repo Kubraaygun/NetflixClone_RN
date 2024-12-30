@@ -6,7 +6,6 @@ import {defaultScreenStyle} from '../../styles/defaultScreenStyle';
 import {useSelector} from 'react-redux';
 import WhatchListItem from '../../components/whatchList/whatchListItem';
 import {ThemeColors} from '../../theme/themeColors';
-import {height} from '../../utils/constants';
 
 // create a component
 const WatchList = () => {
@@ -18,9 +17,9 @@ const WatchList = () => {
           <Text
             style={{
               color: ThemeColors.WHITE,
-              fontSize: 24,
+              fontSize: 30,
               textAlign: 'center',
-              marginVertical: height * 0.05,
+              marginVertical: 10,
             }}>
             Who's Watching?
           </Text>
