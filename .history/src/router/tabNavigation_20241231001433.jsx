@@ -12,9 +12,9 @@ function TabNavigatior() {
   return (
     <Tab.Navigator
       screenOptions={{
+        headerShown: false,
         headerStyle: {
-          backgroundColor: ThemeColors.BLACK, // Siyah arka plan
-          shadowColor: 'transparent', // Çizgiyi kaldırır
+          backgroundColor: ThemeColors.BLACK,
         },
         headerTintColor: ThemeColors.WHITE,
         tabBarStyle: {

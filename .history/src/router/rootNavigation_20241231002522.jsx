@@ -44,6 +44,7 @@ function RootNavigation() {
       <Stack.Screen name={ADDNEWLIST} component={AddNewList} />
       <Stack.Screen
         options={{
+          headerShadowVisible: false,
           headerShown: false,
         }}
         name={TAB}

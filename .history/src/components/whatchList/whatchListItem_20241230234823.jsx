@@ -11,7 +11,9 @@ import {ADDNEWLIST, TAB} from '../../utils/routes';
 const WhatchListItem = ({item, index}) => {
   const navigation = useNavigation();
   return (
-    <Pressable onPress={() => navigation.replace(TAB)} style={styles.container}>
+    <Pressable
+      onPress={() => navigation.navigate(TAB)}
+      style={styles.container}>
       <View
         style={{
           width: width * 0.35,

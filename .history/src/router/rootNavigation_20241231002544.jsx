@@ -17,7 +17,9 @@ function RootNavigation() {
         headerTintColor: ThemeColors.WHITE,
         headerStyle: {
           backgroundColor: ThemeColors.BLACK,
+          shadowColor: 'transparent',
         },
+        headerShadowVisible: false, // Başlık altındaki çizgiyi kaldırır
       })}>
       <Stack.Screen
         options={{

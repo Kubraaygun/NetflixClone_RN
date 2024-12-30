@@ -1,13 +1,3 @@
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Home from '../screens/home';
-import Search from '../screens/search';
-import NewHot from '../screens/newHot';
-import Downloads from '../screens/downloads';
-import {DOWNLOADS, HOME, NEWHOT, SEARCH} from '../utils/routes';
-import {ThemeColors} from '../theme/themeColors';
-
-const Tab = createBottomTabNavigator();
-
 function TabNavigatior() {
   return (
     <Tab.Navigator
@@ -15,6 +5,7 @@ function TabNavigatior() {
         headerStyle: {
           backgroundColor: ThemeColors.BLACK, // Siyah arka plan
           shadowColor: 'transparent', // Çizgiyi kaldırır
+          elevation: 0, // Çizgi kaldırma için
         },
         headerTintColor: ThemeColors.WHITE,
         tabBarStyle: {
@@ -30,5 +21,3 @@ function TabNavigatior() {
     </Tab.Navigator>
   );
 }
-
-export default TabNavigatior;

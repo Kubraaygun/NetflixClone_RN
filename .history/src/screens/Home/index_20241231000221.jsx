@@ -4,7 +4,7 @@ import {View, Text, StyleSheet} from 'react-native';
 import {defaultScreenStyle} from '../../styles/defaultScreenStyle';
 
 // create a component
-const NewHot = () => {
+const Home = () => {
   return (
     <View style={defaultScreenStyle.container}>
       <Text>MyComponent</Text>
@@ -13,4 +13,4 @@ const NewHot = () => {
 };
 
 //make this component available to the app
-export default NewHot;
+export default Home;

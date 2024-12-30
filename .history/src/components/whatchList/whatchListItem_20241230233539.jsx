@@ -5,13 +5,15 @@ import {ThemeColors} from '../../theme/themeColors';
 import {getRandomColor} from '../../utils/function';
 import {width} from '../../utils/constants';
 import {useNavigation} from '@react-navigation/native';
-import {ADDNEWLIST, TAB} from '../../utils/routes';
+import {ADDNEWLIST} from '../../utils/routes';
 
 // create a component
 const WhatchListItem = ({item, index}) => {
   const navigation = useNavigation();
   return (
-    <Pressable onPress={() => navigation.replace(TAB)} style={styles.container}>
+    <Pressable
+      onPress={() => navigation.navigate(ADDNEWLIST)}
+      style={styles.container}>
       <View
         style={{
           width: width * 0.35,

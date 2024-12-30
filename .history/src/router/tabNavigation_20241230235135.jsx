@@ -13,15 +13,8 @@ function TabNavigatior() {
     <Tab.Navigator
       screenOptions={{
         headerStyle: {
-          backgroundColor: ThemeColors.BLACK, // Siyah arka plan
-          shadowColor: 'transparent', // Çizgiyi kaldırır
-        },
-        headerTintColor: ThemeColors.WHITE,
-        tabBarStyle: {
           backgroundColor: ThemeColors.BLACK,
         },
-        tabBarActiveTintColor: ThemeColors.WHITE,
-        tabBarInactiveTintColor: ThemeColors.WHITE,
       }}>
       <Tab.Screen name={HOME} component={Home} />
       <Tab.Screen name={SEARCH} component={Search} />

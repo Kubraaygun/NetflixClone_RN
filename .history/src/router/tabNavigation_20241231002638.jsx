@@ -15,6 +15,7 @@ function TabNavigatior() {
         headerStyle: {
           backgroundColor: ThemeColors.BLACK, // Siyah arka plan
           shadowColor: 'transparent', // Çizgiyi kaldırır
+          elevation: 0, // Çizgi kaldırma için
         },
         headerTintColor: ThemeColors.WHITE,
         tabBarStyle: {
@@ -30,5 +31,3 @@ function TabNavigatior() {
     </Tab.Navigator>
   );
 }
-
-export default TabNavigatior;

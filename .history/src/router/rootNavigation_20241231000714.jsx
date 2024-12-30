@@ -17,6 +17,7 @@ function RootNavigation() {
         headerTintColor: ThemeColors.WHITE,
         headerStyle: {
           backgroundColor: ThemeColors.BLACK,
+          shadowColor: 'transparent',
         },
       })}>
       <Stack.Screen
