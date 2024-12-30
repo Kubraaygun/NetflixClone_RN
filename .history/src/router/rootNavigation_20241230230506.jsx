@@ -6,7 +6,6 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {ThemeColors} from '../theme/themeColors';
 import {Edit2} from 'iconsax-react-native';
 import AddNewList from '../screens/watchList/addNewList';
-import TabNavigatior from './tabNavigation';
 
 const Stack = createNativeStackNavigator();
 
@@ -42,7 +41,7 @@ function RootNavigation() {
         component={WatchList}
       />
       <Stack.Screen name={ADDNEWLIST} component={AddNewList} />
-      <Stack.Screen name={TAB} component={TabNavigatior} />
+      <Stack.Screen name={TAB} component={TAB} />
     </Stack.Navigator>
   );
 }
