@@ -26,9 +26,8 @@ function RootNavigation() {
         component={GetStarted}
       />
       <Stack.Screen name={SIGNIN} component={SignIn} />
-
       <Stack.Screen
-        options={({navigation}) => ({
+        options={{
           headerRight: () => (
             <Edit2
               onPress={() => navigation.navigate(ADDNEWLIST)}
@@ -36,7 +35,7 @@ function RootNavigation() {
               color={ThemeColors.WHITE}
             />
           ),
-        })}
+        }}
         name={WATCHLIST}
         component={WatchList}
       />

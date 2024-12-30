@@ -28,7 +28,7 @@ function RootNavigation() {
       <Stack.Screen name={SIGNIN} component={SignIn} />
 
       <Stack.Screen
-        options={({navigation}) => ({
+        options={({} navigation}) => ({
           headerRight: () => (
             <Edit2
               onPress={() => navigation.navigate(ADDNEWLIST)}
