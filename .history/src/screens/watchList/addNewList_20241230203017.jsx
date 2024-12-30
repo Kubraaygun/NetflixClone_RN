@@ -17,7 +17,7 @@ const AddNewList = () => {
           id: Date.now(),
           title: '',
         }}
-        validationSchema={newUserSchema}
+        // validationSchema={newUserSchema}
         onSubmit={values => console.log(values)}>
         {({handleChange, handleBlur, handleSubmit, values, errors}) => (
           <ScrollView>

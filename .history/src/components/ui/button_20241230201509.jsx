@@ -2,7 +2,6 @@
 import React from 'react';
 import {Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {ThemeColors} from '../../theme/themeColors';
-import {height} from '../../utils/constants';
 ThemeColors;
 
 // create a component
@@ -39,7 +38,6 @@ const styles = StyleSheet.create({
     padding: 10,
     paddingVertical: 15,
     borderRadius: 3,
-    marginTop: height * 0.09,
   },
   title: {
     fontSize: 18,

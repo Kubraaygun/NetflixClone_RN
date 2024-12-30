@@ -23,22 +23,23 @@ const styles = StyleSheet.create({
   container: {
     margin: 10,
     backgroundColor: ThemeColors.GRAY,
-    height: height * 0.1,
-    borderRadius: 5,
-    padding: 5,
   },
   title: {
     fontSize: 18,
-    color: ThemeColors.WHITE,
+    color: ThemeColors.BLACK,
     marginBottom: 5,
     fontWeight: 'bold',
   },
   input: {
     padding: 10,
-    fontSize: 25,
+    fontSize: 16,
     borderRadius: 8,
     paddingVertical: 15,
+
+    borderWidth: 1,
+    borderColor: ThemeColors.RED,
     color: ThemeColors.WHITE,
+    height: height * 0.1,
   },
 });
 

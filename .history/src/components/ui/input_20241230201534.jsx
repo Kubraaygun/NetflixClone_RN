@@ -1,8 +1,6 @@
 //import liraries
 import React from 'react';
 import {View, Text, StyleSheet, TextInput} from 'react-native';
-import {ThemeColors} from '../../theme/themeColors';
-import {height} from '../../utils/constants';
 
 // create a component
 const Input = props => {
@@ -22,23 +20,19 @@ const Input = props => {
 const styles = StyleSheet.create({
   container: {
     margin: 10,
-    backgroundColor: ThemeColors.GRAY,
-    height: height * 0.1,
-    borderRadius: 5,
-    padding: 5,
   },
   title: {
     fontSize: 18,
-    color: ThemeColors.WHITE,
+    color: ThemeColors.BLACK,
     marginBottom: 5,
     fontWeight: 'bold',
   },
   input: {
     padding: 10,
-    fontSize: 25,
-    borderRadius: 8,
+    fontSize: 16,
+    borderRadius: 5,
     paddingVertical: 15,
-    color: ThemeColors.WHITE,
+    backgroundColor: ThemeColors.INPUT,
   },
 });
 

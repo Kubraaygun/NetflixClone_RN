@@ -15,9 +15,9 @@ const AddNewList = () => {
       <Formik
         initialValues={{
           id: Date.now(),
-          title: '',
+          title: 'Kubra',
         }}
-        validationSchema={newUserSchema}
+        // validationSchema={newUserSchema}
         onSubmit={values => console.log(values)}>
         {({handleChange, handleBlur, handleSubmit, values, errors}) => (
           <ScrollView>
@@ -25,7 +25,7 @@ const AddNewList = () => {
               error={errors.title}
               onChangeText={handleChange('title')}
               onBlur={handleBlur('title')}
-              value={values.title}
+              value={values.name}
               title="Whatch List Name"
               placeholder=""
             />

@@ -1,11 +1,9 @@
 //import liraries
 import React from 'react';
 import {View, ScrollView} from 'react-native';
-import {useDispatch} from 'react-redux';
-import Input from '../../components/ui/input';
-import Button from '../../components/ui/button';
-import {defaultScreenStyle} from '../../styles/defaultScreenStyle';
+import defaultScreenStyle from '../../styles/defaultScreenStyle';
 import {Formik} from 'formik';
+import {useDispatch} from 'react-redux';
 
 // create a component
 const AddNewList = () => {
@@ -15,19 +13,19 @@ const AddNewList = () => {
       <Formik
         initialValues={{
           id: Date.now(),
-          title: '',
+          title: 'Kubra',
         }}
-        validationSchema={newUserSchema}
-        onSubmit={values => console.log(values)}>
+        // validationSchema={newUserSchema}
+        onSubmit={values => dispatch(addNewUser(values))}>
         {({handleChange, handleBlur, handleSubmit, values, errors}) => (
           <ScrollView>
             <Input
-              error={errors.title}
-              onChangeText={handleChange('title')}
-              onBlur={handleBlur('title')}
-              value={values.title}
-              title="Whatch List Name"
-              placeholder=""
+              error={errors.name}
+              onChangeText={handleChange('name')}
+              onBlur={handleBlur('name')}
+              value={values.name}
+              title="name"
+              placeholder="Please set name"
             />
             <Button onPress={handleSubmit} title="Save" status="success" />
           </ScrollView>

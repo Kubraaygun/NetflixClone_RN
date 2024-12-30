@@ -25,7 +25,6 @@ const styles = StyleSheet.create({
     backgroundColor: ThemeColors.GRAY,
     height: height * 0.1,
     borderRadius: 5,
-    padding: 5,
   },
   title: {
     fontSize: 18,
@@ -35,7 +34,7 @@ const styles = StyleSheet.create({
   },
   input: {
     padding: 10,
-    fontSize: 25,
+    fontSize: 16,
     borderRadius: 8,
     paddingVertical: 15,
     color: ThemeColors.WHITE,
