@@ -23,9 +23,7 @@ function TabNavigatior() {
         },
         tabBarActiveTintColor: ThemeColors.WHITE,
         tabBarInactiveTintColor: ThemeColors.WHITE,
-        tabBarIcon: ({focused, color, size}) => (
-          <TabBarIcon focused={focused} color={color} size={size} />
-        ),
+        tabBarIcon: ({focused, color, size}) => <TabBarIcon />,
       }}>
       <Tab.Screen name={HOME} component={Home} />
       <Tab.Screen name={SEARCH} component={Search} />

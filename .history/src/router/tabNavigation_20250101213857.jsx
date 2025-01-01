@@ -5,7 +5,6 @@ import NewHot from '../screens/newHot';
 import Downloads from '../screens/downloads';
 import {DOWNLOADS, HOME, NEWHOT, SEARCH} from '../utils/routes';
 import {ThemeColors} from '../theme/themeColors';
-import TabBarIcon from '../components/router/tabIcon';
 
 const Tab = createBottomTabNavigator();
 
@@ -23,9 +22,20 @@ function TabNavigatior() {
         },
         tabBarActiveTintColor: ThemeColors.WHITE,
         tabBarInactiveTintColor: ThemeColors.WHITE,
-        tabBarIcon: ({focused, color, size}) => (
-          <TabBarIcon focused={focused} color={color} size={size} />
-        ),
+        tabBarIcon: ({focused, color, size}) => {
+          let iconName;
+
+          if (route.name === 'Home') {
+            iconName = focused
+              ? 'ios-information-circle'
+              : 'ios-information-circle-outline';
+          } else if (route.name === 'Settings') {
+            iconName = focused ? 'ios-list' : 'ios-list-outline';
+          }
+
+          // You can return any component that you like here!
+          return <Ionicons name={iconName} size={size} color={color} />;
+        },
       }}>
       <Tab.Screen name={HOME} component={Home} />
       <Tab.Screen name={SEARCH} component={Search} />
