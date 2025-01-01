@@ -21,29 +21,11 @@ const TabBarIcon = ({route, color, size, focused}) => {
         />
       );
     case NEWHOT:
-      return (
-        <VideoPlay
-          color={color}
-          size={size}
-          variant={focused ? 'Bold' : 'Outline'}
-        />
-      );
+      return <VideoPlay color={color} size={size} />;
     case SEARCH:
-      return (
-        <SearchNormal1
-          color={color}
-          size={size}
-          variant={focused ? 'Bold' : 'Outline'}
-        />
-      );
+      return <SearchNormal1 color={color} size={size} />;
     case DOWNLOADS:
-      return (
-        <ArrowCircleDown2
-          color={color}
-          size={size}
-          variant={focused ? 'Bold' : 'Outline'}
-        />
-      );
+      return <ArrowCircleDown2 color={color} size={size} />;
     default:
       <MessageQuestion />;
   }
