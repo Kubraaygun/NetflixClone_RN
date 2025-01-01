@@ -1,10 +1,5 @@
 //import liraries
-import {
-  ArrowCircleDown2,
-  Home2,
-  SearchNormal1,
-  VideoPlay,
-} from 'iconsax-react-native';
+import {Home2} from 'iconsax-react-native';
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {DOWNLOADS, HOME, NEWHOT, SEARCH} from '../../utils/routes';
@@ -15,11 +10,11 @@ const TabBarIcon = ({route, color, size}) => {
     case HOME:
       return <Home2 color={color} size={size} />;
     case NEWHOT:
-      return <VideoPlay color={color} size={size} />;
+      return <Home2 color={color} size={size} />;
     case SEARCH:
-      return <SearchNormal1 color={color} size={size} />;
+      return <Home2 color={color} size={size} />;
     case DOWNLOADS:
-      return <ArrowCircleDown2 color={color} size={size} />;
+      return <Home2 color={color} size={size} />;
     default:
       <Home />;
   }

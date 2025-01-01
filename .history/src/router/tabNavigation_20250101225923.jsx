@@ -33,8 +33,8 @@ function TabNavigatior() {
         ),
       })}>
       <Tab.Screen name={HOME} component={Home} />
-      <Tab.Screen name={NEWHOT} component={NewHot} />
       <Tab.Screen name={SEARCH} component={Search} />
+      <Tab.Screen name={NEWHOT} component={NewHot} />
       <Tab.Screen name={DOWNLOADS} component={Downloads} />
     </Tab.Navigator>
   );
