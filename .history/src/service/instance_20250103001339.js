@@ -1,6 +1,6 @@
 import axios from 'axios';
 import {BASE_URL} from './url';
-import {API_KEY, token} from '../utils/constants';
+import {API_KEY} from '../utils/constants';
 
 const Client = axios.create();
 Client.defaults.baseURL = BASE_URL;

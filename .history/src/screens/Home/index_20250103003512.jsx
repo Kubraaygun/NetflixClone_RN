@@ -8,9 +8,13 @@ import {getRequest} from '../../service/verbs';
 // create a component
 const Home = () => {
   useEffect(() => {
-    getRequest(TOP_RATED_MOVIE_URL).then(data => {
-      console.log(data.data);
-    });
+    getRequest(TOP_RATED_MOVIE_URL)
+      .then(data => {
+        console.log(data.data);
+      })
+      .catch(error => {
+        console.error('API çağrısı sırasında bir hata oluştu:', error.message);
+      });
   }, []);
   return (
     <View style={defaultScreenStyle.container}>
