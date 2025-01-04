@@ -3,10 +3,9 @@ import {configureStore} from '@reduxjs/toolkit';
 import whatchListSlice from './slice/whatchListSlice';
 import moviesSlice from './slice/moviesSlice';
 
-const store = configureStore({
+export const store = configureStore({
   reducer: {
-    whatchList: whatchListSlice,
+    watchList: whatchListSlice,
     movies: moviesSlice,
   },
 });
-export default store;

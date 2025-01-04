@@ -5,7 +5,7 @@ import moviesSlice from './slice/moviesSlice';
 
 const store = configureStore({
   reducer: {
-    whatchList: whatchListSlice,
+    watchList: whatchListSlice,
     movies: moviesSlice,
   },
 });

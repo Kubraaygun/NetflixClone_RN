@@ -2,7 +2,8 @@
 import React, {useEffect} from 'react';
 import {View, Text, FlatList} from 'react-native';
 import {defaultScreenStyle} from '../../styles/defaultScreenStyle';
-
+import {TOP_RATED_MOVIE_URL} from '../../service/url';
+import {getRequest} from '../../service/verbs';
 import {useDispatch, useSelector} from 'react-redux';
 import {getTopRatedMovies} from '../../store/action/movieActions';
 
@@ -18,9 +19,7 @@ const Home = () => {
     <View style={defaultScreenStyle.container}>
       <FlatList
         data={topRatedMovies}
-        renderItem={({item}) => (
-          <Text style={{color: 'white'}}>{item.backdrop_path}</Text>
-        )}
+        renderItem={({item}) => <Text>{item.original_title}</Text>}
       />
     </View>
   );
