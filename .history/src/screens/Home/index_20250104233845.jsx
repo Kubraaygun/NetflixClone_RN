@@ -7,7 +7,7 @@ import {getTopRatedMovies} from '../../store/action/movieActions';
 
 // create a component
 const Home = () => {
-  const {topRatedMovies} = useSelector(state => state.movies);
+  const topRatedMovies = useSelector(state => state.movies);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getTopRatedMovies());
@@ -18,7 +18,7 @@ const Home = () => {
       <FlatList
         data={topRatedMovies}
         renderItem={({item}) => (
-          <Text style={{color: 'white'}}>{item.original_title}</Text>
+          <Text style={{color: 'white'}}>{item.origin_title}</Text>
         )}
       />
     </View>

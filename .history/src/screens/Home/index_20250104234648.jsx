@@ -18,7 +18,7 @@ const Home = () => {
       <FlatList
         data={topRatedMovies}
         renderItem={({item}) => (
-          <Text style={{color: 'white'}}>{item.original_title}</Text>
+          <Text style={{color: 'white'}}>{item?.origin_title}</Text>
         )}
       />
     </View>

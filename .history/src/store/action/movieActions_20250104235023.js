@@ -6,7 +6,7 @@ const getTopRatedMovies = createAsyncThunk(
   'movies/getTopRatedMovies',
   async params => {
     const response = await getRequest(TOP_RATED_MOVIE_URL, params);
-
+    console.log('API Response:', response);
     console.log(response.data.results);
 
     return response.data.results;
