@@ -11,6 +11,6 @@ Client.defaults.params = {
 Client.defaults.headers = {
   accept: 'application/json',
   'Content-Type': 'application/json',
-  Authorization: `Bearer ${token}`,
+  Authorization: `Bearer ${token} `,
 };
 export default Client;
