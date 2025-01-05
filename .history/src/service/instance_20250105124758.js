@@ -9,7 +9,7 @@ Client.defaults.params = {
   language: 'tr-TR',
 };
 Client.defaults.headers = {
-  accept: 'application/json',
+  accepts: 'application/json',
   'Content-Type': 'application/json',
   Authorization: `Bearer ${token} `,
 };
