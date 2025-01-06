@@ -14,7 +14,7 @@ const Section = ({item}) => {
       case 1:
         return topRatedMovies;
 
-      case 2:
+      case 3:
         return popularMovies;
 
       default:

@@ -4,10 +4,4 @@ const TOP_RATED_MOVIE_URL = 'movie/top_rated';
 const POPULAR_MOVIE_URL = 'movie/popular';
 const CATEGORIES_URL = 'genre/movie/list';
 
-export {
-  BASE_URL,
-  TOP_RATED_MOVIE_URL,
-  CATEGORIES_URL,
-  IMAGE_BASE_URL,
-  POPULAR_MOVIE_URL,
-};
+export {BASE_URL, TOP_RATED_MOVIE_URL, CATEGORIES_URL, IMAGE_BASE_URL};

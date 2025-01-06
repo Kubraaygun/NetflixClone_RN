@@ -1,5 +1,5 @@
 //import liraries
-import React, {Component} from 'react';
+import React, {Component, useMemo} from 'react';
 import {View, Text, StyleSheet, FlatList} from 'react-native';
 import {ThemeColors} from '../../theme/themeColors';
 import {useSelector} from 'react-redux';
@@ -9,18 +9,16 @@ import MovieItem from '../movies/movieItem';
 const Section = ({item}) => {
   const {topRatedMovies, popularMovies} = useSelector(state => state.movies);
 
-  const setData = () => {
-    switch (item.id) {
+  const setData = useMemo(() => {
+    switch (parseInt(item.id, 10)) {
       case 1:
         return topRatedMovies;
-
       case 2:
         return popularMovies;
-
       default:
         return topRatedMovies;
     }
-  };
+  }, [item.id, topRatedMovies, popularMovies]);
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{item.title}</Text>

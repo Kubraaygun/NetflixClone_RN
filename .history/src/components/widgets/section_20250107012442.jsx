@@ -8,12 +8,10 @@ import MovieItem from '../movies/movieItem';
 // create a component
 const Section = ({item}) => {
   const {topRatedMovies, popularMovies} = useSelector(state => state.movies);
-
   const setData = () => {
     switch (item.id) {
       case 1:
         return topRatedMovies;
-
       case 2:
         return popularMovies;
 

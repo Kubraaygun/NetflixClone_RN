@@ -1,9 +1,5 @@
 import {createSlice} from '@reduxjs/toolkit';
-import {
-  getCategories,
-  getPopularMovies,
-  getTopRatedMovies,
-} from '../action/movieActions';
+import {getCategories, getTopRatedMovies} from '../action/movieActions';
 
 const initialState = {
   topRatedMovies: [],
@@ -43,14 +39,14 @@ const moviesSlice = createSlice({
         state.pending = false;
       })
 
-      .addCase(getPopularMovies.pending, state => {
+      .addCase(getCategories.pending, state => {
         state.pending = true;
       })
-      .addCase(getPopularMovies.fulfilled, (state, action) => {
-        state.popularMovies = action.payload;
+      .addCase(getCategories.fulfilled, (state, action) => {
+        state.categories = action.payload;
         state.pending = false;
       })
-      .addCase(getPopularMovies.rejected, (state, action) => {
+      .addCase(getCategories.rejected, (state, action) => {
         state.error = action.error;
         state.pending = false;
       });

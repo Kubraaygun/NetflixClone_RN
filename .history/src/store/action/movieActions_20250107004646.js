@@ -29,4 +29,4 @@ const getCategories = createAsyncThunk('movies/getCategories', async params => {
 
   return response.data.genres;
 });
-export {getTopRatedMovies, getCategories, getPopularMovies};
+export {getTopRatedMovies, getCategories};

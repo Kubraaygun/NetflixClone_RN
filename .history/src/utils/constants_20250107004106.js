@@ -8,27 +8,27 @@ const token =
 
 const sections = [
   {
-    id: 1,
+    id: '1',
     title: 'Releases in the Past Year',
   },
   {
-    id: 2,
+    id: '2',
     title: 'Continue Watching for Drashti',
   },
   {
-    id: 3,
+    id: '3',
     title: 'Suspenseful TV Shows',
   },
   {
-    id: 4,
+    id: '4',
     title: 'Selected for You Today',
   },
   {
-    id: 5,
+    id: '5',
     title: 'My List',
   },
   {
-    id: 6,
+    id: '6',
     title: 'Ensemble TV Shows',
   },
 ];
