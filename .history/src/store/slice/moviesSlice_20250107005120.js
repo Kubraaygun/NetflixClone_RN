@@ -46,11 +46,11 @@ const moviesSlice = createSlice({
       .addCase(getPopularMovies.pending, state => {
         state.pending = true;
       })
-      .addCase(getPopularMovies.fulfilled, (state, action) => {
-        state.popularMovies = action.payload;
+      .addCase(getCategories.fulfilled, (state, action) => {
+        state.categories = action.payload;
         state.pending = false;
       })
-      .addCase(getPopularMovies.rejected, (state, action) => {
+      .addCase(getCategories.rejected, (state, action) => {
         state.error = action.error;
         state.pending = false;
       });

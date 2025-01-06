@@ -18,7 +18,7 @@ const Section = ({item}) => {
         return popularMovies;
 
       default:
-        return topRatedMovies;
+        break;
     }
   };
   return (

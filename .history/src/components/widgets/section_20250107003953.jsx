@@ -7,26 +7,13 @@ import MovieItem from '../movies/movieItem';
 
 // create a component
 const Section = ({item}) => {
-  const {topRatedMovies, popularMovies} = useSelector(state => state.movies);
-
-  const setData = () => {
-    switch (item.id) {
-      case 1:
-        return topRatedMovies;
-
-      case 2:
-        return popularMovies;
-
-      default:
-        return topRatedMovies;
-    }
-  };
+  const {topRatedMovies} = useSelector(state => state.movies);
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{item.title}</Text>
       <FlatList
         horizontal
-        data={setData()}
+        data={topRatedMovies}
         renderItem={({item}) => <MovieItem item={item} />}
       />
     </View>
@@ -39,7 +26,7 @@ const styles = StyleSheet.create({
   },
   title: {
     color: ThemeColors.WHITE,
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: '500',
     marginVertical: 10,
     marginBottom: 20,

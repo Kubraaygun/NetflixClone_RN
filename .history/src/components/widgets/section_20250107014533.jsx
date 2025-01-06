@@ -10,7 +10,7 @@ const Section = ({item}) => {
   const {topRatedMovies, popularMovies} = useSelector(state => state.movies);
 
   const setData = () => {
-    switch (item.id) {
+    switch (parseInt(item.id, 10)) {
       case 1:
         return topRatedMovies;
 
@@ -20,7 +20,7 @@ const Section = ({item}) => {
       default:
         return topRatedMovies;
     }
-  };
+  }, [item.id, topRatedMovies, popularMovies]);
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{item.title}</Text>
