@@ -10,7 +10,6 @@ const Section = ({item}) => {
   const {topRatedMovies} = useSelector(state => state.movies);
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{item.title}</Text>
       <FlatList
         horizontal
         data={topRatedMovies}
@@ -28,7 +27,6 @@ const styles = StyleSheet.create({
     color: ThemeColors.WHITE,
     fontSize: 18,
     fontWeight: '500',
-    marginVertical: 10,
   },
 });
 

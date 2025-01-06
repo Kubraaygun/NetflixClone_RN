@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import {View, Text, StyleSheet, FlatList} from 'react-native';
 import {ThemeColors} from '../../theme/themeColors';
 import {useSelector} from 'react-redux';
-import MovieItem from '../movies/movieItem';
 
 // create a component
 const Section = ({item}) => {
@@ -11,11 +10,7 @@ const Section = ({item}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{item.title}</Text>
-      <FlatList
-        horizontal
-        data={topRatedMovies}
-        renderItem={({item}) => <MovieItem item={item} />}
-      />
+      <FlatList data={topRatedMovies} />
     </View>
   );
 };
@@ -28,7 +23,6 @@ const styles = StyleSheet.create({
     color: ThemeColors.WHITE,
     fontSize: 18,
     fontWeight: '500',
-    marginVertical: 10,
   },
 });
 

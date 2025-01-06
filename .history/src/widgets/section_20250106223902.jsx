@@ -8,10 +8,7 @@ import Section from '../components/widgets/section';
 const Sections = () => {
   return (
     <View style={styles.container}>
-      <FlatList
-        data={sections}
-        renderItem={({item}) => <Section item={item} />}
-      />
+      <FlatList data={sections} renderItem={({item}) => <Section />} />
     </View>
   );
 };

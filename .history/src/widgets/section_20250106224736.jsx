@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, FlatList} from 'react-native';
 import {sections} from '../utils/constants';
-import Section from '../components/widgets/section';
+import Section from '../components/widgets/sections';
 
 // create a component
 const Sections = () => {

@@ -6,7 +6,7 @@ import {useSelector} from 'react-redux';
 import MovieItem from '../movies/movieItem';
 
 // create a component
-const Section = ({item}) => {
+const Sections = ({item}) => {
   const {topRatedMovies} = useSelector(state => state.movies);
   return (
     <View style={styles.container}>
@@ -14,7 +14,7 @@ const Section = ({item}) => {
       <FlatList
         horizontal
         data={topRatedMovies}
-        renderItem={({item}) => <MovieItem item={item} />}
+        renderItem={({item}) => <Section item={item} />}
       />
     </View>
   );
@@ -28,9 +28,8 @@ const styles = StyleSheet.create({
     color: ThemeColors.WHITE,
     fontSize: 18,
     fontWeight: '500',
-    marginVertical: 10,
   },
 });
 
 //make this component available to the app
-export default Section;
+export default Sections;
