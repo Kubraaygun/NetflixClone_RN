@@ -8,11 +8,9 @@ import {
   getTopRatedMovies,
 } from '../../store/action/movieActions';
 import CategoryItem from '../../components/movies/categoryItem';
-import Categories from '../../widgets/categories';
-import Sections from '../../widgets/section';
 
 // create a component
-const Home = () => {
+const Categories = () => {
   const {topRatedMovies, categories} = useSelector(state => state.movies);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -21,11 +19,14 @@ const Home = () => {
 
   return (
     <View style={defaultScreenStyle.container}>
-      <Categories />
-      <Sections />
+      <FlatList
+        horizontal
+        data={categories}
+        renderItem={({item}) => <CategoryItem item={item} />}
+      />
     </View>
   );
 };
 
 //make this component available to the app
-export default Home;
+export default Categories;
