@@ -7,7 +7,6 @@ import {
   getCategories,
   getTopRatedMovies,
 } from '../../store/action/movieActions';
-import CategoryItem from '../../components/movies/categoryItem';
 
 // create a component
 const Home = () => {
@@ -20,7 +19,6 @@ const Home = () => {
   return (
     <View style={defaultScreenStyle.container}>
       <FlatList
-        horizontal
         data={categories}
         renderItem={({item}) => <CategoryItem item={item} />}
       />

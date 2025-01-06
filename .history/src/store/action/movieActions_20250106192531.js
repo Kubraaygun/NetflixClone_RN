@@ -7,12 +7,16 @@ const getTopRatedMovies = createAsyncThunk(
   async params => {
     const response = await getRequest(TOP_RATED_MOVIE_URL, params);
 
+    console.log(response.data.results);
+
     return response.data.results;
   },
 );
 const getCategories = createAsyncThunk('movies/getCategories', async params => {
   const response = await getRequest(CATEGORIES_URL, params);
 
-  return response.data.genres;
+  console.log(response.data.genres);
+
+  return response.data.results;
 });
 export {getTopRatedMovies, getCategories};

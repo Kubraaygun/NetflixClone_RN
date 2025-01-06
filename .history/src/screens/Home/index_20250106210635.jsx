@@ -20,7 +20,6 @@ const Home = () => {
   return (
     <View style={defaultScreenStyle.container}>
       <FlatList
-        horizontal
         data={categories}
         renderItem={({item}) => <CategoryItem item={item} />}
       />
