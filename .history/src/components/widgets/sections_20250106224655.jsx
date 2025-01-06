@@ -14,7 +14,7 @@ const Section = ({item}) => {
       <FlatList
         horizontal
         data={topRatedMovies}
-        renderItem={({item}) => <MovieItem item={item} />}
+        renderItem={({item}) => <Section item={item} />}
       />
     </View>
   );
@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
     color: ThemeColors.WHITE,
     fontSize: 18,
     fontWeight: '500',
-    marginVertical: 10,
   },
 });
 

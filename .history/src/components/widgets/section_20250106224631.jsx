@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
     color: ThemeColors.WHITE,
     fontSize: 18,
     fontWeight: '500',
-    marginVertical: 10,
   },
 });
 
