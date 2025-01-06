@@ -30,7 +30,7 @@ const moviesSlice = createSlice({
         state.pending = true;
       })
       .addCase(getCategories.fulfilled, (state, action) => {
-        state.categories = action.payload;
+        state.topRatedMovies = action.payload;
         state.pending = false;
       })
       .addCase(getCategories.rejected, (state, action) => {
