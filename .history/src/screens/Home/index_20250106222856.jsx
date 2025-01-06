@@ -9,7 +9,6 @@ import {
 } from '../../store/action/movieActions';
 import CategoryItem from '../../components/movies/categoryItem';
 import Categories from '../../widgets/categories';
-import Sections from '../../widgets/section';
 
 // create a component
 const Home = () => {
@@ -22,7 +21,6 @@ const Home = () => {
   return (
     <View style={defaultScreenStyle.container}>
       <Categories />
-      <Sections />
     </View>
   );
 };

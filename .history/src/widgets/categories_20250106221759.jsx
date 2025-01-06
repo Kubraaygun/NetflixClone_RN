@@ -1,4 +1,4 @@
-//import liraries
+r; //import liraries
 import React, {useEffect} from 'react';
 import {View, Text, FlatList} from 'react-native';
 import {defaultScreenStyle} from '../../styles/defaultScreenStyle';
@@ -8,8 +8,6 @@ import {
   getTopRatedMovies,
 } from '../../store/action/movieActions';
 import CategoryItem from '../../components/movies/categoryItem';
-import Categories from '../../widgets/categories';
-import Sections from '../../widgets/section';
 
 // create a component
 const Home = () => {
@@ -21,8 +19,11 @@ const Home = () => {
 
   return (
     <View style={defaultScreenStyle.container}>
-      <Categories />
-      <Sections />
+      <FlatList
+        horizontal
+        data={categories}
+        renderItem={({item}) => <CategoryItem item={item} />}
+      />
     </View>
   );
 };

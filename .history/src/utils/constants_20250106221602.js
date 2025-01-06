@@ -20,7 +20,7 @@ const sections = [
     title: 'Suspenseful TV Shows',
   },
   {
-    id: '4',
+    id: '5',
     title: 'Selected for You Today',
   },
   {
@@ -29,4 +29,4 @@ const sections = [
   },
 ];
 
-export {width, height, API_KEY, token, sections};
+export {width, height, API_KEY, token};
