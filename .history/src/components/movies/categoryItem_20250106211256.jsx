@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
   name: {
     color: ThemeColors.WHITE,
     fontSize: 20,
-    fontWeight: '500',
   },
 });
 
