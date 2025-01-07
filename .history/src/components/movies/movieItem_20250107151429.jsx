@@ -14,7 +14,7 @@ const MovieItem = ({item}) => {
       onPress={() => navigation.navigate(MOVIEDETAIL, {movieId: item.id})}
       style={styles.container}>
       <Image
-        source={{uri: IMAGE_BASE_URL + item?.poster_path}}
+        source={{uri: IMAGE_BASE_URL + item?.backdrop_path}}
         style={{
           width: width * 0.3,
           height: height * 0.2,

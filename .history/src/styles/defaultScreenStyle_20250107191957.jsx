@@ -9,7 +9,7 @@ const defaultScreenStyle = StyleSheet.create({
   },
   detailScreen: {
     flex: 1,
-    backgroundColor: ThemeColors.BLACK,
+    backgroundColor: ThemeColors.WHITE,
   },
 });
 

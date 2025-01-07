@@ -13,11 +13,11 @@ const sections = [
   },
   {
     id: 2,
-    title: 'Popular ',
+    title: 'Popular Movies',
   },
   {
     id: 3,
-    title: 'Upcoming ',
+    title: 'Upcoming Movies',
   },
   {
     id: 4,
