@@ -31,12 +31,12 @@ const getCategories = createAsyncThunk('movies/getCategories', async params => {
   return response.data.genres;
 });
 
-const getUpcomingMovies = createAsyncThunk(
-  'movies/getUpcomingMovies',
+const getUpComingMovies = createAsyncThunk(
+  'movies/getUpComingMovies',
   async params => {
     const response = await getRequest(UPCOMING_MOVIE_URL, params);
 
-    return response.data.results;
+    return response.data.genres;
   },
 );
-export {getTopRatedMovies, getCategories, getPopularMovies, getUpcomingMovies};
+export {getTopRatedMovies, getCategories, getPopularMovies};

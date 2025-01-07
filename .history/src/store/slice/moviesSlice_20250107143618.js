@@ -3,13 +3,13 @@ import {
   getCategories,
   getPopularMovies,
   getTopRatedMovies,
-  getUpcomingMovies,
+  getUpComingMovies,
 } from '../action/movieActions';
 
 const initialState = {
   topRatedMovies: [],
   popularMovies: [],
-  upcomingMovies: [],
+  upComingMovies: [],
   categories: [],
   pending: false,
   error: null,
@@ -57,14 +57,14 @@ const moviesSlice = createSlice({
         state.pending = false;
       })
 
-      .addCase(getUpcomingMovies.pending, state => {
+      .addCase(getUpComingMovies.pending, state => {
         state.pending = true;
       })
-      .addCase(getUpcomingMovies.fulfilled, (state, action) => {
-        state.upcomingMovies = action.payload;
+      .addCase(getUpComingMovies.fulfilled, (state, action) => {
+        state.upComingMovies = action.payload;
         state.pending = false;
       })
-      .addCase(getUpcomingMovies.rejected, (state, action) => {
+      .addCase(getUpComingMovies.rejected, (state, action) => {
         state.error = action.error;
         state.pending = false;
       });

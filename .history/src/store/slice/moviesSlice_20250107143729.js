@@ -3,7 +3,7 @@ import {
   getCategories,
   getPopularMovies,
   getTopRatedMovies,
-  getUpcomingMovies,
+  getUpComingMovies,
 } from '../action/movieActions';
 
 const initialState = {
@@ -61,7 +61,7 @@ const moviesSlice = createSlice({
         state.pending = true;
       })
       .addCase(getUpcomingMovies.fulfilled, (state, action) => {
-        state.upcomingMovies = action.payload;
+        state.upComingMovies = action.payload;
         state.pending = false;
       })
       .addCase(getUpcomingMovies.rejected, (state, action) => {

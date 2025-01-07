@@ -3,7 +3,7 @@ import {
   getCategories,
   getPopularMovies,
   getTopRatedMovies,
-  getUpcomingMovies,
+  getUpComingMovies,
 } from '../action/movieActions';
 
 const initialState = {
