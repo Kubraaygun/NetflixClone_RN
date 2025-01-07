@@ -73,25 +73,36 @@ const MovieDetail = ({route}) => {
             <Text style={styles.overview}>{movieDetailData.overview}</Text>
             <Text style={styles.section}>Language</Text>
 
-            {movieDetailData?.spoken_languages?.map((item, index) => (
-              <Text style={styles.title} key={index}>
-                {item.name}
-              </Text>
-            ))}
-
-            <Text style={styles.section}>Production Countries</Text>
-            {movieDetailData?.production_countries?.map((item, index) => (
-              <Text style={styles.title} key={index}>
-                {item.name}
-              </Text>
-            ))}
-
-            <Text style={styles.section}>Genres</Text>
-            {movieDetailData?.genres?.map((item, index) => (
-              <Text style={styles.title} key={index}>
-                {item.name}
-              </Text>
-            ))}
+            {movieDetailData?.spoken_languages &&
+            movieDetailData.spoken_languages.length > 0 ? (
+              movieDetailData.spoken_languages.map((item, index) => (
+                <Text style={styles.title} key={index}>
+                  {item.name}
+                </Text>
+              ))
+            ) : (
+              <Text>No languages available</Text>
+            )}
+            {movieDetailData?.spoken_languages &&
+            movieDetailData.spoken_languages.length > 0 ? (
+              movieDetailData.spoken_languages.map((item, index) => (
+                <Text style={styles.title} key={index}>
+                  {item.name}
+                </Text>
+              ))
+            ) : (
+              <Text>No languages available</Text>
+            )}
+            {movieDetailData?.spoken_languages &&
+            movieDetailData.spoken_languages.length > 0 ? (
+              movieDetailData.spoken_languages.map((item, index) => (
+                <Text style={styles.title} key={index}>
+                  {item.name}
+                </Text>
+              ))
+            ) : (
+              <Text>No languages available</Text>
+            )}
           </View>
         </ScrollView>
       )}

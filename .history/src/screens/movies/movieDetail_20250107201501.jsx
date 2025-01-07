@@ -72,22 +72,22 @@ const MovieDetail = ({route}) => {
             <Text style={styles.overview}>{movieDetailData.tagline}</Text>
             <Text style={styles.overview}>{movieDetailData.overview}</Text>
             <Text style={styles.section}>Language</Text>
-
-            {movieDetailData?.spoken_languages?.map((item, index) => (
+            {/* 
+            {movieDetailData.spoken_languages.map((item, index) => (
               <Text style={styles.title} key={index}>
                 {item.name}
               </Text>
-            ))}
+            ))} */}
 
             <Text style={styles.section}>Production Countries</Text>
-            {movieDetailData?.production_countries?.map((item, index) => (
+            {movieDetailData.production_countries.map((item, index) => (
               <Text style={styles.title} key={index}>
                 {item.name}
               </Text>
             ))}
 
             <Text style={styles.section}>Genres</Text>
-            {movieDetailData?.genres?.map((item, index) => (
+            {movieDetailData.genres.map((item, index) => (
               <Text style={styles.title} key={index}>
                 {item.name}
               </Text>
