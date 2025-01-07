@@ -2,12 +2,12 @@ import {createAsyncThunk} from '@reduxjs/toolkit';
 import {getRequest} from '../../service/verbs';
 import {
   CATEGORIES_URL,
-  MOVIE_DETAIL_URL,
   MOVIE_URL,
   POPULAR_MOVIE_URL,
   TOP_RATED_MOVIE_URL,
   UPCOMING_MOVIE_URL,
 } from '../../service/url';
+import {MOVIEDETAIL} from '../../utils/routes';
 
 const getTopRatedMovies = createAsyncThunk(
   'movies/getTopRatedMovies',

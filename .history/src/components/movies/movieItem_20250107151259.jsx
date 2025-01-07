@@ -11,10 +11,10 @@ const MovieItem = ({item}) => {
   const navigation = useNavigation();
   return (
     <Pressable
-      onPress={() => navigation.navigate(MOVIEDETAIL, {movieId: item.id})}
+      onPress={() => navigation.navigate(MOVIEDETAIL)}
       style={styles.container}>
       <Image
-        source={{uri: IMAGE_BASE_URL + item?.poster_path}}
+        source={{uri: IMAGE_BASE_URL + item?.backdrop_path}}
         style={{
           width: width * 0.3,
           height: height * 0.2,

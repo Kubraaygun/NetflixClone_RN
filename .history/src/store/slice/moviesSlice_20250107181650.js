@@ -14,7 +14,6 @@ const initialState = {
   movieDetailData: {},
   categories: [],
   pending: false,
-  pendingDetailData: false,
   error: null,
 };
 
@@ -81,7 +80,7 @@ const moviesSlice = createSlice({
       })
       .addCase(getMovieData.rejected, (state, action) => {
         state.error = action.error;
-        state.pendingDetailData = false;
+        state.pending = false;
       });
   },
 });

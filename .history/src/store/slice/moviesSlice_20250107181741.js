@@ -81,7 +81,7 @@ const moviesSlice = createSlice({
       })
       .addCase(getMovieData.rejected, (state, action) => {
         state.error = action.error;
-        state.pendingDetailData = false;
+        state.pending = false;
       });
   },
 });
