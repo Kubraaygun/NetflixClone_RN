@@ -7,7 +7,6 @@ import {
   getCategories,
   getPopularMovies,
   getTopRatedMovies,
-  getUpcomingMovies,
 } from '../../store/action/movieActions';
 import Categories from '../../widgets/categories';
 import Sections from '../../widgets/section';
@@ -20,7 +19,6 @@ const Home = () => {
     dispatch(getCategories());
     dispatch(getTopRatedMovies());
     dispatch(getPopularMovies());
-    dispatch(getUpcomingMovies());
   }, []);
 
   return (

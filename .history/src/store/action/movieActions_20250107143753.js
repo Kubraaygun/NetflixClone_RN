@@ -36,7 +36,7 @@ const getUpcomingMovies = createAsyncThunk(
   async params => {
     const response = await getRequest(UPCOMING_MOVIE_URL, params);
 
-    return response.data.results;
+    return response.data.genres;
   },
 );
 export {getTopRatedMovies, getCategories, getPopularMovies, getUpcomingMovies};
