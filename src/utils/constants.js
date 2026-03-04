@@ -1,10 +1,9 @@
 import {Dimensions} from 'react-native';
+import {API_KEY, TMDB_TOKEN} from '@env';
 
 const {width, height} = Dimensions.get('window');
 
-const API_KEY = '***REMOVED_API_KEY***';
-const token =
-  '***REMOVED_TMDB_TOKEN***';
+const token = TMDB_TOKEN;
 
 const sections = [
   {
